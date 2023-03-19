@@ -35,10 +35,10 @@ export const categories = [
 ];
 
 export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";
-export const demoChannelUrl = "/channel/UCmXmlB4-HJytD7wek0Uo97A";
-export const demoVideoUrl = "/video/GDa8kZLNhJ4";
-export const demoChannelTitle = "JavaScript Mastery";
+export const demoChannelUrl = "/channel/UCSGC87iX0QhnIfUOI_B_Rdg";
+export const demoVideoUrl = "/video/PrqwxkBB0DA";
+export const demoChannelTitle = "essential;";
 export const demoVideoTitle =
-  "Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI";
+  "[Playlist] 매일이 주말이라면 좋겠어 | 포근포근 이불 속에서 듣는 감성 팝 | warm & cozy pop songs";
 export const demoProfilePicture =
   "http://dergipark.org.tr/assets/app/images/buddy_sample.png";
