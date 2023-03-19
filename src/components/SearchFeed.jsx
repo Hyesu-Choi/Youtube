@@ -6,26 +6,26 @@ import { fetchFromAPI } from "../utils/fetchFromAPI";
 import { Videos } from "./";
 
 const SearchFeed = () => {
-
-  const [ videos, setVideos ] = useState([]);
+  const [videos, setVideos] = useState([]);
 
   const { searchTerm } = useParams();
 
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&q=${searchTerm}`)
-    .then((data) => setVideos(data.items))
+    fetchFromAPI(`search?part=snippet&q=${searchTerm}`).then((data) =>
+      setVideos(data.items)
+    );
   }, [searchTerm]);
 
-
   return (
-    <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2}}>
+    <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
       <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: "white" }}>
-        Search Result for : <span style={{ color: "#f31503" }}>{searchTerm}</span> Videos
+        검색된 결과 동영상 :{" "}
+        <span style={{ color: "#f31503" }}>{searchTerm}</span>{" "}
       </Typography>
 
       <Videos videos={videos} />
     </Box>
-  )
+  );
 };
 
 export default SearchFeed;
